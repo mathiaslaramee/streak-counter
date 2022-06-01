@@ -5,7 +5,6 @@ export const streakCounter = (storage: Storage, date: Date): Streak => {
 
   if (exists) {
     const streak = JSON.parse(exists) as Streak;
-
     const last = new Date(streak.lastLoginDate).valueOf();
     const now = new Date(date).valueOf();
     const diff = datediff(last, now);
