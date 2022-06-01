@@ -1,0 +1,11 @@
+{
+  "name": "streak-counter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mathiaslaramee/streak-counter.git",
+  "author": "Mathias Laramee <MKL@kamstrup.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.7.2"
+  }
+}
