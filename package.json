@@ -1,11 +1,30 @@
 {
-  "name": "streak-counter",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "streak-counter-mkl",
+  "version": "0.0.1",
   "repository": "https://github.com/mathiaslaramee/streak-counter.git",
   "author": "Mathias Laramee <MKL@kamstrup.com>",
   "license": "MIT",
-  "dependencies": {
-    "typescript": "^4.7.2"
+  "types": "./dist/index.d.ts",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.2",
+    "@types/jest": "^27.5.1",
+    "@types/jsdom": "^16.2.14",
+    "jest": "^28.1.0",
+    "jsdom": "^19.0.0",
+    "microbundle": "^0.15.0",
+    "ts-jest": "^28.0.3"
   }
 }
